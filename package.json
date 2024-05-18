@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "nodemon index.js",
     "build": "babel . --ignore node_modules --out-dir dist --copy-files",
-    "start": "npm install bcrypt && node dist/index.js"
+    "start": "npm install bcrypt@5 && node dist/index.js"
   },
   "author": "",
   "license": "ISC",
