@@ -4,11 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index.js --exec babel-node",
-    "build": "npx babel . --ignore node_modules --out-dir dist --copy-files",
-    "start": "node dist/index.js",
-    "preinstall": "rmdir /s /q node_modules",
-    "postinstall": "npm rebuild bcrypt --build-from-source"
+    "dev": "nodemon index.js",
+    "build": "babel . --ignore node_modules --out-dir dist --copy-files",
+    "start": "node dist/index.js"
   },
   "author": "",
   "license": "ISC",
