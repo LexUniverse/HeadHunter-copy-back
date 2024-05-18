@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index.js",
-    "build": "node index.js"
+    "dev": "nodemon index.js --exec babel-node",
+    "build": "babel . --ignore node_modules --out-dir dist --copy-files",
+    "start": "node dist/index.js"
   },
   "author": "",
   "license": "ISC",
@@ -20,6 +21,9 @@
     "sequelize": "^6.37.3"
   },
   "devDependencies": {
+    "@babel/cli": "^7.24.5",
+    "@babel/core": "^7.24.5",
+    "@babel/preset-env": "^7.24.5",
     "nodemon": "^3.1.0"
   }
 }
